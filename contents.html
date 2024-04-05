@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Brings You to D Website?</title>
+    <style>
+        body {
+            font-family: Trirong, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: aliceblue;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .option {
+            margin: 10px;
+            border: 1px solid #555;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        label {
+            color: #333;
+            font-weight: bold;
+            display: block;
+            cursor: pointer;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>What Brings You to D Website?</h2>
+        <center><p>Select the options that describe your purpose.</p><br><br><br><br></center>
+        <form id="reasonForm">
+            <div class="option">
+                <label>
+                    <input type="radio" name="reason" value="Inspiration"> Networking
+                    <i><p>I'm here to grow my <br>network with my talent.</p></i>
+                </label>
+            </div>
+            <div class="option">
+                <label>
+                    <input type="radio" name="reason" value="Showcasing Work"> Showcasing Work
+                    <i><p>I'm here to showcase my talent<br> and find more options.</p></i>
+                </label>
+            </div>
+            <div class="option">
+                <label>
+                    <input type="radio" name="reason" value="Exploring Projects"> Exploring Projects
+                    <i><p>I'm here to find more<br> projects that help me grow more.</p></i>
+                </label>
+            </div>
+        </form><br><br><br>
+        <center>
+            <button id="finishButton" type="button">Finish</button>
+        </center>
+    </div>
+
+    <script>
+        document.getElementById('finishButton').addEventListener('click', function() {
+            window.location.href = 'verify_email.html';
+        });
+    </script>
+</body>
+</html>
